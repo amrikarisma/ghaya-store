@@ -82,6 +82,8 @@ const addToCart = () => {
     const addCarts = document.querySelectorAll('.add-cart');
     addCarts.forEach(addCart => {
         addCart.addEventListener('click', function () {
+            const bsOffcanvas = new bootstrap.Offcanvas('#cartOffcanvas')
+            bsOffcanvas.show();
             let cart_exist = false
             let amount = 0
             let cart = {
