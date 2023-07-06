@@ -41,10 +41,15 @@ a:hover {
 
 .section-products .single-product .part-1 {
     position: relative;
-    height: 290px;
-    max-height: 290px;
+    height: 190px;
+    max-height: 190px;
     margin-bottom: 20px;
     overflow: hidden;
+
+    @media (min-width:768px) {
+        height: 290px;
+        max-height: 290px;
+    }
 }
 
 .section-products .single-product .part-1::before {
@@ -150,17 +155,23 @@ a:hover {
     transform: translateY(-50%);
 }
 
-.social-media-list {
-    display: inline-flex;
+.section-social-media {
+    img {
+        width: 60px;
+        height: auto;
+        object-fit: contain;
+    }
 
-    &>li {
-        list-style: none;
-        padding: 15px;
+    .social-media-list {
+        display: inline-flex;
 
-        img {
-            width: 40px;
-            height: auto;
-            object-fit: contain;
+        &>li {
+            list-style: none;
+            padding: 15px;
+
+            img {
+                width: 40px;
+            }
         }
     }
 }
