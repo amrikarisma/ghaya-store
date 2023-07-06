@@ -130,7 +130,7 @@ const renderCarts = () => {
                 <!-- <h6 class="text-muted">Shirt</h6> -->
                 <h6 class="text-black mb-0">${product.name}</h6>
             </div>
-            <div class="col-4 d-flex">
+            <div class="col-5 d-flex">
                 <button class="btn btn-link px-2"
                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
                     <i class="fas fa-minus"></i>
